@@ -1,0 +1,1 @@
+cmd_/home/solors/Share/Source/ms5611/src/ms561101ba.ko := arm-linux-ld -EL -r  -T /home/solors/Documents/Sensor/kernel-3.4.39/scripts/module-common.lds --build-id  -o /home/solors/Share/Source/ms5611/src/ms561101ba.ko /home/solors/Share/Source/ms5611/src/ms561101ba.o /home/solors/Share/Source/ms5611/src/ms561101ba.mod.o
