@@ -2,7 +2,7 @@
  * @file ms561101ba.c
  * driver for the MS5611-01BA03 Barometric Pressure Sensor connected via I2C
  *
- * write by Sarlor, Guangzhou, 01/19/2017
+ * write by Sarlor, 01/19/2017
  *  */
 #include <linux/module.h>
 #include <linux/init.h>
