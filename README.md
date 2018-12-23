@@ -60,4 +60,3 @@ cd src
                 Device Drivers -> Hardware Monitoring support -> MS5611-01BA03 Barometric Pressure Sensor
 
         Check, save.
-
