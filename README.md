@@ -20,12 +20,11 @@ vim Makefile
 make cp
 ```
 
-4. Add board-level support code
+4. Add board-level support code to the appropriate place.
 ```bash
 vim arch/arm/plat-s5p4418/realarm/device.c
 ```
 
-5. Add the code in the appropriate place
 ```c
 #if defined(CONFIG_SENSORS_MS561101BA) || defined(CONFIG_SENSORS_MS561101BA_MODULE)
 #include <linux/i2c.h>
