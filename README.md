@@ -66,7 +66,7 @@ vim drivers/hwmon/Kconfig
 ```
 
 9. Add ms5611 driver module
-`obj-$(CONFIG_SENSORS_MS561101BA)        += ms561101ba.o`
+	`obj-$(CONFIG_SENSORS_MS561101BA)        += ms561101ba.o`
 
 8. Configure the kernel to use this driver
     1. Open config menu
