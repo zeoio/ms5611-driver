@@ -67,14 +67,11 @@ vim drivers/hwmon/Makefile
 obj-$(CONFIG_SENSORS_MS561101BA)        += ms561101ba.o
 ```
 
-7. Configure the kernel to use this driver
-	1. Open config menu for selest required submodule
-	```bash
-	make menuconfig
-	```
+7. Configure the kernel for required submodule, then save config
+```bash
+make menuconfig
+```
 	
-	```c
-	Device Drivers -> Hardware Monitoring support -> MS5611-01BA03 Barometric Pressure Sensor
-	```
-       
-	2. Save config
+```
+Device Drivers -> Hardware Monitoring support -> MS5611-01BA03 Barometric Pressure Sensor
+```
