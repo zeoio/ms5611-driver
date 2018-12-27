@@ -20,7 +20,7 @@ vim Makefile
 make cp
 ```
 
-4. Add board-level support code to the appropriate place.
+4. Add board-level support code to the appropriate place
 ```bash
 vim arch/arm/plat-s5p4418/realarm/device.c
 ```
@@ -42,12 +42,11 @@ static struct i2c_board_info __initdata ms561101ba_i2c_bdi = {
 #endif
 ```
 
-6. Modify the kernel configuration file for ms5611
+5. Modify the kernel configuration file for ms5611, and add the code to the appropriate place
 ```bash
 vim drivers/hwmon/Kconfig
 ```
 
-7.  Add the code in the appropriate place
 ```c
 config SENSORS_MS561101BA
 	tristate "MS5611-01BA03 Barometric Pressure Sensor"
@@ -59,25 +58,23 @@ config SENSORS_MS561101BA
                 If unsure, say N.
 ```
 
-8. Edit Makefile
+6. Edit Makefile for add ms5611 driver module
 ```bash
 vim drivers/hwmon/Makefile
 ```
 
-9. Add ms5611 driver module
 ```c
 obj-$(CONFIG_SENSORS_MS561101BA)        += ms561101ba.o
 ```
 
-10. Configure the kernel to use this driver
-	1. Open config menu
+7. Configure the kernel to use this driver
+	1. Open config menu for selest required submodule
 	```bash
 	make menuconfig
 	```
-
-	2. Open the required submodule
+	
 	```c
 	Device Drivers -> Hardware Monitoring support -> MS5611-01BA03 Barometric Pressure Sensor
 	```
        
-	3. Save config
+	2. Save config
