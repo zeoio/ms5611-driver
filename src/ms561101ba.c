@@ -543,7 +543,7 @@ static void __exit ms561101ba_exit(void)
 	i2c_del_driver(&ms561101ba_driver);
 }
 
-MODULE_AUTHOR("Sarlor <zoreorg@gmail.com>");
+MODULE_AUTHOR("Sarlor <kinsleer@outlook.com>");
 MODULE_DESCRIPTION("MS561101BA driver");
 MODULE_LICENSE("GPL");
 
